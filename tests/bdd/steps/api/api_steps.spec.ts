@@ -1,5 +1,5 @@
 import { test, expect, APIRequestContext } from '@playwright/test';
-import { getLatestCredentials } from '../../utils/db';
+import { getLatestCredentials } from '../../../utils/db';
 
 const API_BASE_URL = 'https://api.eventhub.rahulshettyacademy.com/api';
 

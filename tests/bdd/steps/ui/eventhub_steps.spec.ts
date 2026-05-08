@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getLatestCredentials } from '../../utils/db';
+import { getLatestCredentials } from '../../../utils/db';
 
 const BASE_URL = 'https://eventhub.rahulshettyacademy.com';
 
