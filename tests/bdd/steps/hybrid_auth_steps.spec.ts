@@ -33,5 +33,9 @@ test.describe('Feature: Hybrid Authentication Flow', () => {
     await expect(page.getByRole('link', { name: 'My Bookings' }).first()).toBeVisible();
     
     console.log(`Successfully logged in ${testEmail} via UI after API registration.`);
+    
+    // Keep the browser open for manual inspection
+    console.log("Pausing execution to keep the browser open...");
+    await page.pause();
   });
 });
