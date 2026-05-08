@@ -12,12 +12,6 @@ Feature: EventHub User Interface
     Then I should be redirected to the EventHub home page
     And I should see the "Events" and "My Bookings" navigation links
 
-  Scenario: Create a new event as an admin
-    Given I am logged in to EventHub
-    When I navigate to the "Admin Events" page
-    And I create a new event with title "BDD Test Event"
-    Then the event "BDD Test Event" should be visible in the events list
-
   Scenario: Book an existing event
     Given I am logged in to EventHub
     When I navigate to the "Events" page

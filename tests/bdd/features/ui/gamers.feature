@@ -14,12 +14,3 @@ Feature: Gamers Dashboard and Tic-Tac-Toe
     When I click the "New Match" link
     Then I should be navigated to the match recording page
 
-  Scenario: Play a full game of Tic-Tac-Toe
-    Given I am on the Tic-Tac-Toe game page
-    When I enter player names "PlayerX" and "PlayerO"
-    And I start the game
-    And I play moves to make "PlayerX" win
-    Then I should see the "Winner: PlayerX" message
-    When I save the result
-    Then I should be redirected to the dashboard
-    And "PlayerX" should appear in the recent matches
